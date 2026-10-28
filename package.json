@@ -1,0 +1,32 @@
+{
+  "name": "koishi-plugin-wechat-ai",
+  "version": "1.0.0",
+  "description": "为 wechat-onebot 提供大模型聊天能力的 Koishi 插件",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "README.md"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "koishi",
+    "chatbot",
+    "onebot",
+    "wechat",
+    "ai",
+    "llm"
+  ],
+  "peerDependencies": {
+    "koishi": "^4.18.0"
+  },
+  "koishi": {
+    "description": {
+      "zh": "连接 wechat-onebot，用 OpenAI 兼容大模型自动回复微信消息"
+    },
+    "service": {
+      "required": [
+        "http"
+      ]
+    }
+  }
+}
